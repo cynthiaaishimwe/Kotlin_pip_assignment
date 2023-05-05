@@ -3,6 +3,7 @@ fun main(args: Array<String>) {
 println(introduction("Cynthia",56,"Rwanda"))
 person("cynthia")
     println(lengthString("dog"))
+    println(replace_vowels("school"))
 
 }
 //Write a function that takes in 3 parameters, name, age, and country, and
@@ -36,7 +37,7 @@ fun lengthString(animal:String):Int{
 //Write a Kotlin function that takes in a string will all the vowels replaces by the character ‘*’.
 //Use string interpolation to generate the output.
 
-fun replace_vowels(letters:String){
+fun replace_vowels(letters:String):String{
  var vowels = "aiuoe"
    var emptyString = ""
     for (i in letters){
@@ -45,6 +46,8 @@ fun replace_vowels(letters:String){
              emptyString +="*"
             }
         }
+
     }
-      return
+    return " new output is $emptyString  "
+
 }
